@@ -1,21 +1,55 @@
 .nav {
   height: 50px;
   width: 100%;
-  position: relative;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*position: relative;*/
 }
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-  text-transform: uppercase;
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 0px 10px 0px 10px;
-  color: #fff;
+.nav ul li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-top:10px;
   text-decoration: none;
 }
+.nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+  /*display: block;*/
+}
+.nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+@media (max-width: 600px) {
+  .nav {
+    background-color: rgba(0, 0, 0, 0.0);
+    margin-bottom:120px;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    width: 100%;
+  }
+  .nav ul li {
+    float: none;             /* Remove horizontal floating */
+    width: 100%;
+    text-decoration: none;
+    padding-top:10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav ul li a {
+    padding: 12px;           /* Adjust padding as desired */
+    text-align: left;
+    width: 100%;
+  }
+
 }

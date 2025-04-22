@@ -10,6 +10,8 @@ body {
 }
 .container {
     margin: 30px auto;
+    width: 90%;
+    max-width: 1920px;
     border: 2px solid #2a5887;
     background: #1e2126;
     padding: 30px 30px;
@@ -81,8 +83,8 @@ body.dark p, body.dark h2, body.dark h3, body.dark h4, body.dark li {
 
 body.dark h1, body.dark a, body.dark hr, body.dark h3{color: #222;}
 
-body.dark .nav > .nav-links > a {
-    color: #000;
+body.dark .nav ul li a:hover {
+    color: #fff;
 }
 /* Light versions - END */
 
