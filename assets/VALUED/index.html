@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style = "background-color:rgba(0,0,0,0.1);">
+
+
+<div class="container bg-white">
+    <div class="container" style = "margin-top:20px;">
+        <div class="row g-0">
+          <div class="col-lg-12">
+              <h1 class="header">VALUE Dataset</h1>
+              <h4 class="subtitle">Explore sample images from the Vision and Logical Understanding Evaluation (VALUE) Dataset.</h4>
+              <hr style = "color:rgba(0,0,0,1);margin-bottom:20px;">
+          </div>
+        </div>
+        <div class="row g-0" style="padding-bottom:30px;">
+          <div class="col-lg-4 block">
+              <a class="para" href= "https://zenodo.org/records/10607059"><i class="fa fa-database" style="font-size:30px;cursor:pointer;"></i> Dataset</a>
+          </div>
+          <div class="col-lg-4 block">
+              <a class="para" href= "https://github.com/espressoVi/VALUE-Dataset"><i class="fa fa-github" style="font-size:30px;cursor:pointer;"></i> Code</a>
+          </div>
+          <div class="col-lg-4 block">
+              <a class="para" href= "https://arxiv.org/pdf/2311.12610"><i class="fa fa-file-pdf-o" style="font-size:30px;cursor:pointer;"></i> Paper</a>
+          </div>
+        <hr style = "color:rgba(0,0,0,1);margin-top:20px;">
+        </div>
+        <br>
+    </div>
+    <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-12" style= "padding-top:1px;padding-left:0;color:rgba(0,0,0,0.4)">
+              <h4 style="padding-bottom:20px;"> Abstract </h4>
+              <p style = "padding-left:20px;padding-right:40px;text-align:justify;">Starting with early successes in computer vision tasks, deep learning based techniques have since overtaken state of the art approaches in a multitude of domains. However, it has been demonstrated time and again that these techniques fail to capture semantic context and logical constraints, instead often relying on spurious correlations to arrive at the answer. Since application of deep learning techniques to critical scenarios are dependent on adherence to domain specific constraints, several attempts have been made to address this issue. One limitation holding back a thorough exploration of this area, is a lack of suitable datasets which feature a rich set of rules. In order to address this, we present the VALUE (Vision And Logical Understanding Evaluation) Dataset, consisting of 200,000+ annotated images and an associated rule set, based on the popular board game - chess. The curated rule set considerably constrains the set of allowable predictions, and are designed to probe key semantic abilities like localization and enumeration. Alongside standard metrics, additional metrics to measure performance with regards to logical consistency is presented. We analyze several popular and state of the art vision models on this task, and show that, although their performance on standard metrics are laudable, they produce a plethora of incoherent results, indicating that this dataset presents a significant challenge for future works.</p>
+          </div>
+        </div>
+        <hr style = "color:rgba(0,0,0,1);margin-bottom:30px;">
+    </div>
+    <div class="container" style="padding-bottom:30px;">
+        <div class="row g-0">
+          <div class="col-sm-2" style = "padding-right:10px">
+            <img src="img/CV_0000047.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="col-sm-2" style= "padding-right:10px">
+            <img src="img/CV_0000049.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="col-sm-2" style= "padding-right:10px">
+            <img src="img/CV_0000001.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="col-sm-2" style= "padding-right:10px">
+            <img src="img/CV_0000002.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="col-sm-2" style= "padding-right:10px">
+            <img src="img/CV_0000003.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="col-sm-2" style= "padding-right:10px">
+            <img src="img/CV_0000004.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+    </div>
+    <div class="container" style = "margin-bottom:20px">
+        <div class="row g-0">
+          <div class="col-lg-12" style= "padding-left:0;color:rgba(0,0,0,0.4)">
+              <p>Designed and maintained by <a href="https://espressovi.github.io" style= "color:rgba(0,0,0,0.4);">Soumadeep Saha.</a></p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()" style = "color:white;">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+        <img src="img/CV_0000047.jpg" style="width:100%">
+        <div class="numbertext">1 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000049.jpg" style="width:100%">
+        <div class="numbertext">2 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000001.jpg" style="width:100%">
+        <div class="numbertext">3 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000003.jpg" style="width:100%">
+        <div class="numbertext">4 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000005.jpg" style="width:100%">
+        <div class="numbertext">5 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000030.jpg" style="width:100%">
+        <div class="numbertext">6 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000027.jpg" style="width:100%">
+        <div class="numbertext">7 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000039.jpg" style="width:100%">
+        <div class="numbertext">8 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000016.jpg" style="width:100%">
+        <div class="numbertext">9 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000050.jpg" style="width:100%">
+        <div class="numbertext">10 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000035.jpg" style="width:100%">
+        <div class="numbertext">11 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000004.jpg" style="width:100%">
+        <div class="numbertext">12 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000040.jpg" style="width:100%">
+        <div class="numbertext">13 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000007.jpg" style="width:100%">
+        <div class="numbertext">14 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000048.jpg" style="width:100%">
+        <div class="numbertext">15 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000011.jpg" style="width:100%">
+        <div class="numbertext">16 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000032.jpg" style="width:100%">
+        <div class="numbertext">17 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000024.jpg" style="width:100%">
+        <div class="numbertext">18 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000034.jpg" style="width:100%">
+        <div class="numbertext">19 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000046.jpg" style="width:100%">
+        <div class="numbertext">20 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000025.jpg" style="width:100%">
+        <div class="numbertext">21 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000006.jpg" style="width:100%">
+        <div class="numbertext">22 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000023.jpg" style="width:100%">
+        <div class="numbertext">23 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000038.jpg" style="width:100%">
+        <div class="numbertext">24 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000036.jpg" style="width:100%">
+        <div class="numbertext">25 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000043.jpg" style="width:100%">
+        <div class="numbertext">26 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000002.jpg" style="width:100%">
+        <div class="numbertext">27 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000031.jpg" style="width:100%">
+        <div class="numbertext">28 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000028.jpg" style="width:100%">
+        <div class="numbertext">29 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000026.jpg" style="width:100%">
+        <div class="numbertext">30 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000022.jpg" style="width:100%">
+        <div class="numbertext">31 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000014.jpg" style="width:100%">
+        <div class="numbertext">32 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000042.jpg" style="width:100%">
+        <div class="numbertext">33 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000033.jpg" style="width:100%">
+        <div class="numbertext">34 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000037.jpg" style="width:100%">
+        <div class="numbertext">35 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000019.jpg" style="width:100%">
+        <div class="numbertext">36 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000017.jpg" style="width:100%">
+        <div class="numbertext">37 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000012.jpg" style="width:100%">
+        <div class="numbertext">38 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000044.jpg" style="width:100%">
+        <div class="numbertext">39 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000018.jpg" style="width:100%">
+        <div class="numbertext">40 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000029.jpg" style="width:100%">
+        <div class="numbertext">41 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000008.jpg" style="width:100%">
+        <div class="numbertext">42 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000010.jpg" style="width:100%">
+        <div class="numbertext">43 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000009.jpg" style="width:100%">
+        <div class="numbertext">44 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000000.jpg" style="width:100%">
+        <div class="numbertext">45 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000015.jpg" style="width:100%">
+        <div class="numbertext">46 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000013.jpg" style="width:100%">
+        <div class="numbertext">47 / 48</div>
+    </div>
+    <div class="mySlides">
+        <img src="img/CV_0000021.jpg" style="width:100%">
+        <div class="numbertext">48 / 48</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+</body>
+
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>

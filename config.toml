@@ -1,0 +1,14 @@
+name = "espressovi"
+
+[html]
+root = "./assets/html"
+
+header = "header.html"
+head = "head.html"
+
+[pages]
+content = "./assets/content"
+pages = [["index"], ["pub", "updates", "experience"]]
+assets = "./assets"
+site = "./"
+html = "html"
