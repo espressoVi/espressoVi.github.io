@@ -1,0 +1,49 @@
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pub-item {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.pub-meta {
+  font-size: 0.9rem;
+  opacity: .8;
+}
+.pub-venue {
+  font-size: 1.1rem;
+  opacity: .8;
+}
+.pub-title {
+  margin: .2rem 0 .6rem;
+}
+.pub-title a {
+  text-decoration: none;
+}
+.pub-links {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  font-size: 1.15rem;
+}
+.icon-link { color: $link-color; }
+.icon-link:hover { color:inherit; }
+
+.copy-bib {
+  font-size: 0.8rem;
+  background: none;
+  color: $link-color;
+  border: 1px solid currentColor;
+  padding: .15rem .5rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.copy-bib:hover { 
+  color:inherit;
+  background: rgba(255,255,255,.1);
+}
+
+.about-justified .page__content p {
+  text-align: justify;
+}
