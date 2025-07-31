@@ -18,6 +18,7 @@ include:
 
 footer_scripts:
   - /assets/js/copied.js
+  - /assets/js/main.min.js
 
 plugins:
   - jekyll-paginate

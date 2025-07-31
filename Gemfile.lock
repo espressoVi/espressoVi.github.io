@@ -328,7 +328,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-algolia
-  jekyll-feed
   jekyll-gist
   jekyll-include-cache
   jekyll-paginate
