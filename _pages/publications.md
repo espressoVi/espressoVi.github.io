@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% assign published = site.data.publications | where: "status", "published" | sort: "year" | reverse %}
+{% assign published = site.data.publications | where: "status", "published" | sort: "priority" | reverse %}
 {% include pub_list.html pubs=published%}
 
 ## Patents

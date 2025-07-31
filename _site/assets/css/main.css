@@ -1337,4 +1337,18 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .copy-bib:hover { color: inherit; background: rgba(255, 255, 255, 0.1); }
 
+.updates { list-style: disc; margin-left: 1.25rem; padding: 0; }
+
+.updates-year { margin: 2.0rem 0 0.6rem; }
+
+.update-item { margin-bottom: 1.4rem; }
+
+.update-header { /* title + right-aligned date */ display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; font-size: 1.05rem; font-weight: 600; }
+
+.update-date { font-size: .9rem; opacity: .8; }
+
+.update-text p:last-child { margin-bottom: 0; }
+
 .about-justified .page__content p { text-align: justify; }
+
+.ratext { float: right; text-align: right; margin-left: 1rem; }

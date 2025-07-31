@@ -19,9 +19,10 @@
   venue_full: "Nations of the Americas Chapter of the Association for Computational Linguistics"
   year: 2025
   pdf: "https://aclanthology.org/2025.naacl-long.104.pdf"
-  poster: "./pdf/NAACL2025_LanguageModelsAreCrosswordSolvers.pdf"
+  poster: "/assets/pdf/NAACL2025_LanguageModelsAreCrosswordSolvers.pdf"
   video: "https://youtu.be/VGxSeutuzO4?si=KZ7zWZkQ-SgnA5m9"
   status: published
+  priority: 120
   bibtex: |
     @inproceedings{saha-etal-2025-language,
     title = {Language Models are Crossword Solvers},
@@ -45,6 +46,7 @@
   year: 2025
   pdf: "https://raw.githubusercontent.com/mlresearch/v275/main/assets/saha25a/saha25a.pdf"
   status: published
+  priority: 100
   bibtex: |
     @inproceedings{pmlr-v275-saha25a,
       title =  {On Measuring Intrinsic Causal Attributions in Deep Neural Networks},
@@ -68,6 +70,7 @@
   year: 2024
   pdf: "https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli_a_00493.pdf"
   status: published
+  priority: 80
   bibtex: |
     @article{10.1162/coli_a_00493,
       author = {Chaturvedi, Akshay and Bhar, Swarnadeep and Saha, Soumadeep and Garain, Utpal and Asher, Nicholas},
@@ -92,6 +95,7 @@
   pdf: "https://data.mlr.press/assets/pdf/v01-13.pdf"
   video: "https://youtu.be/6V9VlTEfHT4?si=pnzGlYoSt6jSG-ud"
   status: published
+  priority: 60
   bibtex: |
     @article{saha2024valued,
       title={{VALUED} - Vision and Logical Understanding Evaluation Dataset},
@@ -108,6 +112,7 @@
   year: 2023
   pdf: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0283895&type=printable"
   status: published
+  priority: 20
   bibtex: |
     @article{10.1371/journal.pone.0283895,
       doi = {10.1371/journal.pone.0283895},
@@ -129,6 +134,7 @@
   venue: "W3PHIAI @ AAAI"
   year: 2024
   status: published
+  priority: 21
   bibtex: |
     @inbook{Saha2024,
       author={Saha, Soumadeep and Garain, Utpal and Ukil, Arijit and Pal, Arpan and Khandelwal, Sundeep},
@@ -151,6 +157,7 @@
   year: 2024
   pdf: "https://iopscience.iop.org/article/10.3847/1538-4365/ad5558/pdf"
   status: published
+  priority: 10
   bibtex: |
     @article{Shah_2024,
       doi = {10.3847/1538-4365/ad5558},

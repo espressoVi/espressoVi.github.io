@@ -10,13 +10,14 @@ search: false
 atom_feed:
   hide: true
 
-# Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 
 include:
   - _pages
-  - _includes
+
+footer_scripts:
+  - /assets/js/copied.js
 
 plugins:
   - jekyll-paginate
@@ -24,6 +25,10 @@ plugins:
   - jekyll-gist
   - jemoji
   - jekyll-include-cache
+
+keep_files:
+  - VALUED
+  - CapOne
 
 author:
   name   : "Soumadeep Saha"
@@ -41,10 +46,10 @@ author:
       url: "https://scholar.google.com/citations?user=RMegz-MAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/espressovi"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/espressovi42"
+      url: "https://linkedin.com/in/espressovi42"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/espressovi"
@@ -54,12 +59,12 @@ author:
 
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/espressovi"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:soumadeep.saha97@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/espressovi"
 
 defaults:
   - scope:
@@ -68,21 +73,13 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      read_time: false
+      comments: false
+      share: false
+      related: false
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/

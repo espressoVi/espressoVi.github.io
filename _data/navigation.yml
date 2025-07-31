@@ -9,3 +9,6 @@ main:
     url: /experience/
   - title: "Updates"
     url: /updates/
+  - title: "<i class='fas fa-file-download'></i>CV"
+    url: /assets/pdf/cv.pdf
+    target: _blank

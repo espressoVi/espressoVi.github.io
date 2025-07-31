@@ -1,0 +1,22 @@
+{% assign entries = site.data.updates | sort: "date" | reverse %}
+{% assign current_year = "" %}
+
+<ul class="updates">
+{% for u in entries %}
+  {% assign year = u.date | date: "%Y" %}
+  {% if year != current_year %}
+    <h2 class="updates-year" id="{{ year }}">{{ year }}</h2>
+    {% assign current_year = year %}
+  {% endif %}
+
+  <li class="update-item">
+    <div class="update-header">
+      <span class="update-title">{{ u.title }}</span>
+      <span class="update-date">{{ u.date | date: "%B %Y" }}</span>
+    </div>
+    <div class="update-text">
+      {{ u.text | markdownify }}
+    </div>
+  </li>
+{% endfor %}
+</ul>
