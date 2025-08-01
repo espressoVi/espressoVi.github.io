@@ -8,7 +8,7 @@ author_profile: true
 ## Positions
 
 [comment]: # (HIDA position)
-_(July--October, 2024)_
+_July--October, 2024_
 {: .ratext}
 - **HIDA Visiting Researcher**   
 
@@ -16,7 +16,7 @@ Worked at the Institute of Aerospace Medicine, DLR, Cologne. Applying state-of-t
 {: .notice}
 
 [comment]: # (Alleima)
-_(March--May, 2024)_
+_March--May, 2024_
 {: .ratext}
 - **Alleima R&D**  
 
@@ -24,7 +24,7 @@ Worked on computer vision aided industrial automation scheme, delivering an end 
 {: .notice}
 
 [comment]: # (TCS)
-_(November 2021--July 2024)_
+_November 2021--July 2022_
 {: .ratext}
 - **TCS Research**  
 
