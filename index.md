@@ -12,8 +12,7 @@ I am a PhD candidate at the Computer Vision and Pattern Recognition Unit,
 My PhD work has focused on trying to inculcate key features of symbolic AI
 techniques&mdash;such as domain constraint awareness and logical
 coherence&mdash;into deep learning-based systems. My dissertation titled
-["_Domain Obedient Deep Learning_"](https://github.com/espressoVi/Dissertation/blob/5e8e0f1cf19be1c23e4e660e6882724728b70da4/thesis.pdf)
-has been **accepted**.
+["_Domain Obedient Deep Learning_"](/assets/pdf/dissertation.pdf) has been **accepted**.
 
 I am currently exploring techniques to better understand large language model
 (LLM) reasoning and to promote constraint adherence in LLMs, with the goal of
