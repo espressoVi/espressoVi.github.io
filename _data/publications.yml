@@ -1,9 +1,17 @@
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
   url: "https://arxiv.org/abs/2505.14607"
   authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
-  venue: Arxiv
+  venue: Accepted to EMNLP 2025 (findings).
   year: 2025
   status: preprint
+
+- title: "sudoLLM: On Multi-role Alignment of Language Models"
+  url: "https://arxiv.org/abs/2505.14607"
+  authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
+  venue: Accepted to EMNLP 2025 (findings).
+  year: 2025
+  status: published
+  priority: 130
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://arxiv.org/abs/2507.11408"

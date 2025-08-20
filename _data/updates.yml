@@ -1,3 +1,8 @@
+- title: "Paper accepted to EMNLP 2025"
+  date: 2025-08-21
+  text: >
+    Our paper titled *sudoLLM: On Multi-role Alignment of Language Models* was accepted to EMNLP 2025 (findings).
+
 - title: "Preprint"
   date: 2025-07-15
   text: >
@@ -29,7 +34,7 @@
     Thanks to OpenAI for providing us with a computational credit grant under
     their Researcher Access Program.
 
-- title: "Paper accepted to NAACL"
+- title: "Paper accepted to NAACL 2025"
   date: 2025-01-01
   text: >
     Our paper titled *Language Models are Crossword Solvers* was accepted to NAACL 2025 (main).
