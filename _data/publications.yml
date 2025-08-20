@@ -1,14 +1,15 @@
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
   url: "https://arxiv.org/abs/2505.14607"
   authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
-  venue: Accepted to EMNLP 2025 (findings).
+  venue: Accepted to EMNLP 2025 (findings)
   year: 2025
   status: preprint
+  # Remove this once proceedings is out, and keep the other copy!
 
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
   url: "https://arxiv.org/abs/2505.14607"
   authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
-  venue: Accepted to EMNLP 2025 (findings).
+  venue: Accepted to EMNLP 2025 (findings)
   year: 2025
   status: published
   priority: 130

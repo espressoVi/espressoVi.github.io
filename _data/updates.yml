@@ -1,7 +1,9 @@
 - title: "Paper accepted to EMNLP 2025"
   date: 2025-08-21
   text: >
-    Our paper titled *sudoLLM: On Multi-role Alignment of Language Models* was accepted to EMNLP 2025 (findings).
+    Our paper titled
+    [*sudoLLM: On Multi-role Alignment of Language Models*](https://arxiv.org/abs/2505.14607)
+    was accepted to EMNLP 2025 (findings).
 
 - title: "Preprint"
   date: 2025-07-15
