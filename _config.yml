@@ -2,8 +2,8 @@ title: Soumadeep Saha
 masthead_title: "<i class='fas fa-regular fa-house'></i>"
 email: soumadeep.saha97@gmail.com
 description: >-
-  Personal website of Soumadeep Saha, a researcher working in Natural Language
-  Processing, Deep Learning, AI, etc.
+  Personal website of Soumadeep Saha, PhD, a researcher working in Natural
+  Language Processing, Deep Learning, AI, etc.
 github_username: espressovi
 minimal_mistakes_skin: dark
 dark_mode: true
@@ -36,7 +36,7 @@ author:
   name   : "Soumadeep Saha"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : |-
-    Research Fellow,  
+    PhD,  
     Indian Statistical Institute,  
     Kolkata
   links:
