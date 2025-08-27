@@ -5,11 +5,22 @@ permalink: /education/
 author_profile: true
 ---
 
+### PhD
+_2020--2025_
+{: .ratext}  
+**[ISI Kolkata](http://www.isical.ac.in/)**  
+
+Computer Science.
+
+Worked on enhancing deep learning systems with the strengths of symbolic AI techniques for greater
+logical coherence and domain constraint adherence.  
+**Dissertation** - "[Domain Obedient Deep Learning](https://dspace.isical.ac.in/jspui/handle/10263/7608)".
+{: .notice}
+
 ### BS & MS
 _2015--2020_
 {: .ratext}  
 **[IISER Kolkata](http://www.iiserkol.ac.in/)**  
-
 
 Majored in Physics, minored in Mathematics.
 

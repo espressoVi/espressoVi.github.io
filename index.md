@@ -15,7 +15,8 @@ I am currently exploring techniques to better understand large language model
 (LLM) reasoning and to promote constraint adherence in LLMs, with the goal of
 improving their reasoning, alignment, and overall reliability.
 
-> Dissertation: ["_Domain Obedient Deep Learning_"](/assets/pdf/dissertation.pdf).
+**Dissertation**: "[_Domain Obedient Deep Learning_](https://dspace.isical.ac.in/jspui/handle/10263/7608)" |
+<a href="/assets/pdf/dissertation.pdf"><i class="fa-solid fa-file-pdf"></i></a>
 
 ## Recent Works
 
