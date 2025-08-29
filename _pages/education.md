@@ -5,24 +5,20 @@ permalink: /education/
 author_profile: true
 ---
 
-### PhD
+### PhD,  <span style="font-size: 70%;font-weight: normal;">Computer Science</span>
 _2020--2025_
 {: .ratext}  
 **[ISI Kolkata](http://www.isical.ac.in/)**  
-
-Computer Science.
 
 Worked on enhancing deep learning systems with the strengths of symbolic AI techniques for greater
 logical coherence and domain constraint adherence.  
 **Dissertation** - "[Domain Obedient Deep Learning](https://dspace.isical.ac.in/jspui/handle/10263/7608)".
 {: .notice}
 
-### BS & MS
+### BS & MS,  <span style="font-size: 70%;font-weight: normal;">Physics major, Mathematics minor</span>
 _2015--2020_
 {: .ratext}  
 **[IISER Kolkata](http://www.iiserkol.ac.in/)**  
-
-Majored in Physics, minored in Mathematics.
 
 Recipient of the prestigious Kishore Vigyan Pratoshan Yojna (**KVPY**) fellowship from DST, Govt. of India.  
 **Master's dissertation** - "[Towards Robust Deep Learning Systems](/assets/pdf/MastersThesis.pdf)".
