@@ -185,7 +185,7 @@
 - title: "LADDER: Revisiting the Cosmic Distance Ladder with Deep Learning Approaches and Exploring Its Applications"
   url: "https://iopscience.iop.org/article/10.3847/1538-4365/ad5558"
   authors: "R. Shah, Soumadeep Saha, P. Mukherjee, U. Garain, S. Pal"
-  venue: "The Astrophysical Journal Supplement Series (APJS)"
+  venue: "ApJS"
   year: 2024
   pdf: "https://iopscience.iop.org/article/10.3847/1538-4365/ad5558/pdf"
   code: "https://github.com/rahulshah1397/LADDER"
