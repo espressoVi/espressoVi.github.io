@@ -1,3 +1,28 @@
+- title: "Domain Obedient Deep Learning (PhD Dissertation)"
+  url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
+  authors: "Soumadeep Saha"
+  venue: Indian Statistical Institute, Kolkata
+  pdf: "/assets/pdf/dissertation.pdf"
+  year: 2025
+  status: preprint
+  priority: 19
+  bibtex: |
+    @phdthesis{SahaDissertation,
+      title = {Domain Obedient Deep Learning},
+      author = {Saha, Soumadeep},
+      school = {Indian Statistical Institute, Kolkata},
+      url = {https://dspace.isical.ac.in/jspui/handle/10263/7608},
+      note = {https://digitalcommons.isical.ac.in/doctoral-theses/629},
+      year = {2025}
+    }
+
+- title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
+  url: "https://arxiv.org/abs/2507.11408"
+  authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
+  venue: Arxiv
+  year: 2025
+  status: preprint
+
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
   url: "https://arxiv.org/abs/2505.14607"
   authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
@@ -12,14 +37,9 @@
   venue: Accepted to EMNLP (findings)
   year: 2025
   status: published
+  pdf: "https://arxiv.org/pdf/2505.14607"
+  code: "https://www.github.com/espressovi/sudoLLM"
   priority: 130
-
-- title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
-  url: "https://arxiv.org/abs/2507.11408"
-  authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
-  venue: Arxiv
-  year: 2025
-  status: preprint
 
 - title: "Language Models are Crossword Solvers"
   url: "https://aclanthology.org/2025.naacl-long.104/"
@@ -30,6 +50,7 @@
   pdf: "https://aclanthology.org/2025.naacl-long.104.pdf"
   poster: "/assets/pdf/NAACL2025_LanguageModelsAreCrosswordSolvers.pdf"
   video: "https://youtu.be/VGxSeutuzO4?si=KZ7zWZkQ-SgnA5m9"
+  code: "https://www.github.com/espressovi/LMCrossword"
   status: published
   priority: 120
   bibtex: |
@@ -78,6 +99,7 @@
   venue: "Computational Linguistics"
   year: 2024
   pdf: "https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli_a_00493.pdf"
+  code: "https://www.github.com/akshay107/sem-faithfulness"
   status: published
   priority: 80
   bibtex: |
@@ -103,6 +125,7 @@
   year: 2024
   pdf: "https://data.mlr.press/assets/pdf/v01-13.pdf"
   video: "https://youtu.be/6V9VlTEfHT4?si=pnzGlYoSt6jSG-ud"
+  code: "https://github.com/espressoVi/VALUE-Dataset"
   status: published
   priority: 60
   bibtex: |
@@ -165,6 +188,7 @@
   venue: "The Astrophysical Journal Supplement Series (APJS)"
   year: 2024
   pdf: "https://iopscience.iop.org/article/10.3847/1538-4365/ad5558/pdf"
+  code: "https://github.com/rahulshah1397/LADDER"
   status: published
   priority: 10
   bibtex: |

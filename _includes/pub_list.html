@@ -27,6 +27,9 @@
       {% if pub.slides %}
         <a href="{{ pub.slides }}" class="icon-link" aria-label="Slides"><i class="fab fa-file-powerpoint"></i></a>
       {% endif %}
+      {% if pub.code %}
+        <a href="{{ pub.code }}" class="icon-link" aria-label="Code"><i class="fas fa-code"></i></a>
+      {% endif %}
       {% if pub.bibtex %}
         <button class="copy-bib" data-bib="{{ pub.bibtex | escape }}"><i class="fas fa-copy"></i>BibTeX</button>
       {% endif %}

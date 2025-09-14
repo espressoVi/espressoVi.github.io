@@ -1,4 +1,4 @@
-- title: "Viva voce/thesis defense."
+- title: "Thesis defense (viva voce)"
   date: 2025-08-25
   text: >
     I successfully defended my dissertation titled "[_Domain Obedient Deep Learning_](/assets/pdf/dissertation.pdf)".
@@ -8,7 +8,7 @@
   text: >
     Our paper titled
     [*sudoLLM: On Multi-role Alignment of Language Models*](https://arxiv.org/abs/2505.14607)
-    was accepted to EMNLP 2025 (findings).
+    was accepted to appear in the Findings of EMNLP 2025.
 
 - title: "Preprint"
   date: 2025-07-15

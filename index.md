@@ -15,12 +15,6 @@ I am currently exploring techniques to better understand large language model
 (LLM) reasoning and to promote constraint adherence in LLMs, with the goal of
 improving their reasoning, alignment, and overall reliability.
 
-**Dissertation**: "_Domain Obedient Deep Learning_"  
-<a href="https://dspace.isical.ac.in/jspui/handle/10263/7608"><i class="fa-solid fa-globe"></i></a>
-<a href="/assets/pdf/dissertation.pdf"><i class="fa-solid fa-file-pdf"></i></a>
-<button class="copy-bib" data-bib="@phdthesis{SahaDissertation, title = {Domain Obedient Deep Learning}, author = {Saha, Soumadeep}, school = {Indian Statistical Institute, Kolkata}, url = {https://dspace.isical.ac.in/jspui/handle/10263/7608}, note = {https://digitalcommons.isical.ac.in/doctoral-theses/629}, year = {2025}}"><i class="fas fa-copy"></i>BibTeX</button>
-
-
 ## Recent Works
 
 {% assign published = site.data.publications | where: "status", "preprint" | sort: "year" | reverse %}
