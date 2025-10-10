@@ -182,6 +182,30 @@
       url={https://doi.org/10.1007/978-3-031-63592-2_10}
     }
 
+- title: "Square Kilometre Array Science Data Challenge 3a: foreground removal for an EoR experiment"
+  url: "https://doi.org/10.1093/mnras/staf1466"
+  authors: "A. Bonaldi, P. Hartley, R. Braun, S. Purser, ... Soumadeep Saha, ... (191 additional authors)."
+  venue: "Monthly Notices of the Royal Astronomical Society (MNRAS)"
+  year: 2025
+  pdf: "https://academic.oup.com/mnras/article-pdf/543/2/1092/64222444/staf1466.pdf"
+  status: published
+  priority: 9
+  bibtex: |
+    @article{10.1093/mnras/staf1466,
+      author = {Bonaldi, A and Hartley, P and Braun, R and Purser, S and Acharya, A and Ahn, K and Aparicio Resco, M and Bait, O and Bianco, M and Chakraborty, A and Chapman, E and Chatterjee, S and Chege, K and Chen, H and Chen, X and Chen, Z and Conaboy, L and Cruz, M and Darriba, L and De Santis, M and Denzel, P and Diao, K and Feron, J and Finlay, C and Gehlot, B and Ghosh, S and Giri, S K and Grumitt, R and Hong, S E and Ito, T and Jiang, M and Jordan, C and Kim, S and Kim, M and Kim, J and Krishna, S P and Kulkarni, A and López-Caniego, M and Labadie-García, I and Lee, H and Lee, D and Lee, N and Line, J and Liu, Y and Mao, Y and Mazumder, A and Mertens, F G and Munshi, S and Nasirudin, A and Ni, S and Nistane, V and Norregaard, C and Null, D and Offringa, A and Oh, M and Oh, S-H and Parkinson, D and Pritchard, J and Ruiz-Granda, M and Salvador López, V and Shan, H and Sharma, R and Trott, C and Yoshiura, S and Zhang, L and Zhang, X and Zheng, Q and Zhu, Z and Zuo, S and Akahori, T and Alberto, P and Allys, E and An, T and Anstey, D and Baek, J and Basavraj and Brackenhoff, S and Browne, P and Ceccotti, E and Chen, H and Chen, T and Choudhuri, S and Choudhury, M and Coles, J and Cook, J and Cornu, D and Cunnington, S and Das, S and de Lera Acedo Acedo, E and Delouis, J-M and Deng, F and Ding, J and Elahi, K M A and Fernandez, P and Fernández, C and Fernández Alcázar, A and Galluzzi, V and Gao, L-Y and Garain, U and Garrido, J and Gendron-Marsolais, M-L and Gessey-Jones, T and Ghorbel, H and Gong, Y and Guo, S and Hasegawa, K and Hayashi, T and Herranz, D and Holanda, V and Holloway, A J and Hothi, I and Höfer, C and Jelić, V and Jiang, Y and Jiang, X and Kang, H and Kim, J-Y and Koopmans, L V and Lacroix, R and Lee, E and Leeney, S and Levrier, F and Li, Y and Liu, Y and Ma, Q and Meriot, R and Mesinger, A and Mevius, M and Minoda, T and Miville-Deschênes, M-A and Moldon, J and Mondal, R and Murmu, C and Murray, S and Nirmala SR and Niu, Q and Nunhokee, C and O’Hara, O and Pal, S K and Pal, S and Park, J and Parra, M and Patra, N N and Pindor, B and Remazeilles, M and Rey, P and Rubino-Martin, J A and Saha, S and Selvaraj, A and Semelin, B and Shah, R and Shao, Y and Shaw, A K and Shi, F and Shimabukuro, H and Singh, G and Sohn, B W and Stagni, M and Starck, J-L and Sui, C and Swinbank, J D and Sánchez, J and Sánchez-Expósito, S and Takahashi, K and Takeuchi, T and Tripathi, A and Verdes-Montenegro, L and Vielva, P and Vitello, F R and Wang, G-J and Wang, Q and Wang, X and Wang, Y and Wang, Y-X and Wiegert, T and Wild, A and Williams, W L and Wolz, L and Wu, X and Wu, P and Xia, J-Q and Xu, Y and Yan, R and Yan, Y-P and Yin, Z and You, Z and Yu, X and Yu, K and Yue, B and Zhang, L and Zhao, Z and Zhao, X and Zhou, X},
+      title = {Square Kilometre Array Science Data Challenge 3a: foreground removal for an EoR experiment},
+      journal = {Monthly Notices of the Royal Astronomical Society},
+      volume = {543},
+      number = {2},
+      pages = {1092-1119},
+      year = {2025},
+      month = {09},
+      issn = {0035-8711},
+      doi = {10.1093/mnras/staf1466},
+      url = {https://doi.org/10.1093/mnras/staf1466},
+      eprint = {https://academic.oup.com/mnras/article-pdf/543/2/1092/64222444/staf1466.pdf},
+    }
+
 - title: "LADDER: Revisiting the Cosmic Distance Ladder with Deep Learning Approaches and Exploring Its Applications"
   url: "https://iopscience.iop.org/article/10.3847/1538-4365/ad5558"
   authors: "R. Shah, Soumadeep Saha, P. Mukherjee, U. Garain, S. Pal"
