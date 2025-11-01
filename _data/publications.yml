@@ -1,21 +1,3 @@
-- title: "PhD Thesis: Domain Obedient Deep Learning"
-  url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
-  authors: "Soumadeep Saha"
-  venue: Indian Statistical Institute, Kolkata
-  pdf: "/assets/pdf/dissertation.pdf"
-  year: 2025
-  status: preprint
-  priority: 19
-  bibtex: |
-    @phdthesis{SahaDissertation,
-      title = {Domain Obedient Deep Learning},
-      author = {Saha, Soumadeep},
-      school = {Indian Statistical Institute, Kolkata},
-      url = {https://dspace.isical.ac.in/jspui/handle/10263/7608},
-      note = {https://digitalcommons.isical.ac.in/doctoral-theses/629},
-      year = {2025}
-    }
-
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://arxiv.org/abs/2507.11408"
   authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
@@ -24,22 +6,28 @@
   status: preprint
 
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
-  url: "https://arxiv.org/abs/2505.14607"
+  url: "https://aclanthology.org/2025.findings-emnlp.21/"
   authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
-  venue: Accepted to EMNLP (findings)
-  year: 2025
-  status: preprint
-  # Remove this once proceedings is out, and keep the other copy!
-
-- title: "sudoLLM: On Multi-role Alignment of Language Models"
-  url: "https://arxiv.org/abs/2505.14607"
-  authors: "Soumadeep Saha, A. Chaturvedi, J. Mahapatra, U. Garain"
-  venue: Accepted to EMNLP (findings)
+  venue: EMNLP (findings)
   year: 2025
   status: published
-  pdf: "https://arxiv.org/pdf/2505.14607"
+  pdf: "https://aclanthology.org/2025.findings-emnlp.21.pdf"
   code: "https://www.github.com/espressovi/sudoLLM"
   priority: 130
+  bibtex: |
+    @inproceedings{saha-etal-2025-sudollm,
+      title = {sudo{LLM}: On Multi-role Alignment of Language Models},
+      author = {Saha, Soumadeep  and Chaturvedi, Akshay  and Mahapatra, Joy  and Garain, Utpal},
+      editor = {Christodoulopoulos, Christos  and Chakraborty, Tanmoy  and Rose, Carolyn  and Peng, Violet},
+      booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+      month = nov,
+      year = {2025},
+      address = {Suzhou, China},
+      publisher = {Association for Computational Linguistics},
+      url = {https://aclanthology.org/2025.findings-emnlp.21/},
+      pages = {366--384},
+      ISBN = {979-8-89176-335-7}
+    }
 
 - title: "Language Models are Crossword Solvers"
   url: "https://aclanthology.org/2025.naacl-long.104/"
@@ -67,6 +55,24 @@
     doi = {10.18653/v1/2025.naacl-long.104},
     pages = {2074--2090},
     ISBN = {979-8-89176-189-6}
+    }
+
+- title: "PhD Thesis: Domain Obedient Deep Learning"
+  url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
+  authors: "Soumadeep Saha"
+  venue: Indian Statistical Institute, Kolkata
+  pdf: "/assets/pdf/dissertation.pdf"
+  year: 2025
+  status: preprint
+  priority: 19
+  bibtex: |
+    @phdthesis{SahaDissertation,
+      title = {Domain Obedient Deep Learning},
+      author = {Saha, Soumadeep},
+      school = {Indian Statistical Institute, Kolkata},
+      url = {https://dspace.isical.ac.in/jspui/handle/10263/7608},
+      note = {https://digitalcommons.isical.ac.in/doctoral-theses/629},
+      year = {2025}
     }
 
 - title: "On Measuring Intrinsic Causal Attributions in Deep Neural Networks"
