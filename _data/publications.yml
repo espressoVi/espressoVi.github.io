@@ -100,11 +100,11 @@
     }
 
 - title: "Analyzing Semantic Faithfulness of Language Models via Input Intervention on Question Answering"
-  url: "https://direct.mit.edu/coli/article/doi/10.1162/coli_a_00493/118135/Analyzing-Semantic-Faithfulness-of-Language-Models"
+  url: "https://aclanthology.org/2024.cl-1.5/"
   authors: "A. Chaturvedi, S. Bhar, Soumadeep Saha, U. Garain, N. Asher"
   venue: "Computational Linguistics"
   year: 2024
-  pdf: "https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli_a_00493.pdf"
+  pdf: "https://aclanthology.org/2024.cl-1.5.pdf"
   code: "https://www.github.com/akshay107/sem-faithfulness"
   status: published
   priority: 80
