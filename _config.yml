@@ -1,4 +1,4 @@
-title: Soumadeep Saha
+title: Soumadeep Saha, PhD
 masthead_title: "<i class='fas fa-regular fa-house'></i>"
 email: soumadeep.saha97@gmail.com
 description: >-
@@ -36,9 +36,9 @@ author:
   name   : "Soumadeep Saha"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : |-
-    PhD,  
-    Indian Statistical Institute,  
-    Kolkata
+    **PhD**, ISI Kolkata  
+      
+    _"So long, and thanks for all the fish!"_
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
