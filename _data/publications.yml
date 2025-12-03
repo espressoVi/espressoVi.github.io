@@ -25,6 +25,7 @@
       address = {Suzhou, China},
       publisher = {Association for Computational Linguistics},
       url = {https://aclanthology.org/2025.findings-emnlp.21/},
+      doi = {10.18653/v1/2025.findings-emnlp.21},
       pages = {366--384},
       ISBN = {979-8-89176-335-7}
     }
@@ -43,19 +44,45 @@
   priority: 120
   bibtex: |
     @inproceedings{saha-etal-2025-language,
-    title = {Language Models are Crossword Solvers},
-    author = {Saha, Soumadeep  and Chakraborty, Sutanoya  and Saha, Saptarshi  and Garain, Utpal},
-    editor = {Chiruzzo, Luis  and Ritter, Alan  and Wang, Lu},
-    booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
-    month = apr,
-    year = {2025},
-    address = {Albuquerque, New Mexico},
-    publisher = {Association for Computational Linguistics},
-    url = {https://aclanthology.org/2025.naacl-long.104/},
-    doi = {10.18653/v1/2025.naacl-long.104},
-    pages = {2074--2090},
-    ISBN = {979-8-89176-189-6}
+      title = {Language Models are Crossword Solvers},
+      author = {Saha, Soumadeep  and Chakraborty, Sutanoya  and Saha, Saptarshi  and Garain, Utpal},
+      editor = {Chiruzzo, Luis  and Ritter, Alan  and Wang, Lu},
+      booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+      month = apr,
+      year = {2025},
+      address = {Albuquerque, New Mexico},
+      publisher = {Association for Computational Linguistics},
+      url = {https://aclanthology.org/2025.naacl-long.104/},
+      doi = {10.18653/v1/2025.naacl-long.104},
+      pages = {2074--2090},
+      ISBN = {979-8-89176-189-6}
     }
+
+- title: "Analyzing Semantic Faithfulness of Language Models via Input Intervention on Question Answering"
+  url: "https://aclanthology.org/2024.cl-1.5/"
+  authors: "A. Chaturvedi, S. Bhar, Soumadeep Saha, U. Garain, N. Asher"
+  venue: "Computational Linguistics"
+  year: 2024
+  pdf: "https://aclanthology.org/2024.cl-1.5.pdf"
+  code: "https://www.github.com/akshay107/sem-faithfulness"
+  status: published
+  priority: 110
+  bibtex: |
+    @article{10.1162/coli_a_00493,
+      author = {Chaturvedi, Akshay and Bhar, Swarnadeep and Saha, Soumadeep and Garain, Utpal and Asher, Nicholas},
+      title = {Analyzing Semantic Faithfulness of Language Models via Input Intervention on Question Answering},
+      journal = {Computational Linguistics},
+      volume = {50},
+      number = {1},
+      pages = {119-155},
+      year = {2024},
+      month = {03},
+      issn = {0891-2017},
+      doi = {10.1162/coli_a_00493},
+      url = {https://doi.org/10.1162/coli\_a\_00493},
+      eprint = {https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli\_a\_00493.pdf},
+    }
+
 
 - title: "PhD Thesis: Domain Obedient Deep Learning"
   url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
@@ -97,31 +124,6 @@
       publisher = {PMLR},
       pdf = {https://raw.githubusercontent.com/mlresearch/v275/main/assets/saha25a/saha25a.pdf},
       url = {https://proceedings.mlr.press/v275/saha25a.html}
-    }
-
-- title: "Analyzing Semantic Faithfulness of Language Models via Input Intervention on Question Answering"
-  url: "https://aclanthology.org/2024.cl-1.5/"
-  authors: "A. Chaturvedi, S. Bhar, Soumadeep Saha, U. Garain, N. Asher"
-  venue: "Computational Linguistics"
-  year: 2024
-  pdf: "https://aclanthology.org/2024.cl-1.5.pdf"
-  code: "https://www.github.com/akshay107/sem-faithfulness"
-  status: published
-  priority: 80
-  bibtex: |
-    @article{10.1162/coli_a_00493,
-      author = {Chaturvedi, Akshay and Bhar, Swarnadeep and Saha, Soumadeep and Garain, Utpal and Asher, Nicholas},
-      title = {Analyzing Semantic Faithfulness of Language Models via Input Intervention on Question Answering},
-      journal = {Computational Linguistics},
-      volume = {50},
-      number = {1},
-      pages = {119-155},
-      year = {2024},
-      month = {03},
-      issn = {0891-2017},
-      doi = {10.1162/coli_a_00493},
-      url = {https://doi.org/10.1162/coli\_a\_00493},
-      eprint = {https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli\_a\_00493.pdf},
     }
 
 - title: "VALUED - Vision and Logical Understanding Evaluation Dataset"
