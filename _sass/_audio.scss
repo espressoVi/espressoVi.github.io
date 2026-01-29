@@ -1,0 +1,27 @@
+/* Wrapper to keep IPA and button aligned */
+.pronunciation-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.speaker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.speaker-btn:focus-visible {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

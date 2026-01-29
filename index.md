@@ -5,15 +5,18 @@ permalink: /
 classes: about-justified
 author_profile: true
 ---
-I completed my PhD at the Computer Vision and Pattern Recognition Unit,
-[ISI Kolkata](https://www.isical.ac.in), working under the supervision of
-[Dr. Utpal Garain](https://www.isical.ac.in/~utpal/). My PhD work has focused on
-trying to inculcate key features of symbolic AI techniques&mdash;such as domain
-constraint awareness and logical coherence&mdash;into deep learning-based systems.
+## About
 
-I am currently exploring techniques to better understand large language model
-(LLM) reasoning and to promote constraint adherence in LLMs, with the goal of
-improving their reasoning, alignment, and overall reliability.
+I am Soumadeep {% include speaker.html %} (pronounced _Show-mo-deep_), and I
+completed my PhD in Computer Science at the Computer Vision and Pattern
+Recognition Unit, [ISI Kolkata](https://www.isical.ac.in), under the supervision
+of [Dr. Utpal Garain](https://www.isical.ac.in/~utpal/).
+
+My doctoral research focused on integrating key symbolic AI principles&mdash;such
+as domain constraint awareness and logical coherence&mdash;into deep
+learning systems. Currently, I am exploring techniques to better understand and
+enhance reasoning in Large Language Models (LLMs), with a focus on constraint
+adherence, alignment, and reliability.
 
 ## Recent Works
 
