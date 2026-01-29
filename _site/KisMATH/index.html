@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisMATH | In Preparation</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .abstract-preview {
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .links {
+            margin-top: 40px;
+        }
+
+        .links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="status-badge">In Preparation</div>
+        
+        <h1>KisMATH</h1>
+        <p class="subtitle">Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?</p>
+
+        <div class="abstract-preview">
+            <strong>Abstract</strong>
+            <p>
+            Chain-of-thought (CoT) traces have been shown to improve performance
+            of large language models on a plethora of reasoning tasks, yet there
+            is no consensus on the mechanism by which this boost is achieved. To
+            shed more light on this, we introduce Causal CoT Graphs (CCGraphs),
+            which are directed acyclic graphs automatically extracted from
+            reasoning traces that model fine-grained causal dependencies in
+            language-model outputs. A collection of 1671 mathematical reasoning
+            problems from MATH500, GSM8K, and AIME, together with their
+            associated CCGraphs, has been compiled into our dataset&mdash;KisMATH.
+            Our detailed empirical analysis with 15 open-weight LLMs shows that
+            (i) reasoning nodes in the CCGraphs are causal contributors to the
+            final answer, which we argue is constitutive of reasoning; and (ii)
+            LLMs emphasize the reasoning paths captured by the CCGraphs,
+            indicating that the models internally realize structures similar to
+            our graphs. KisMATH enables controlled, graph-aligned interventions
+            and opens avenues for further investigation into the role of CoT in
+            LLM reasoning.
+            </p>
+        </div>
+
+        <div class="links">
+            <a href="https://arxiv.org/abs/2507.11408">ArXiv</a>
+            <a href="#">Data</a>
+            <a href="#">Code</a>
+            <a href="mailto:soumadeep.saha97@gmail.com">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>
