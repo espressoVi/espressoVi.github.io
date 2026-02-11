@@ -1,3 +1,10 @@
+- title: "The Synergistic Integration of Access Control Management and Large Language Model Agents: A Survey"
+  url: "https://doi.org/10.36227/techrxiv.177075184.43798334/v1"
+  authors: "Francesco Periti and Soumadeep Saha"
+  venue: TexRxiv
+  year: 2026
+  status: preprint
+
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://arxiv.org/abs/2507.11408"
   authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
@@ -84,14 +91,14 @@
     }
 
 
-- title: "PhD Thesis: Domain Obedient Deep Learning"
+- title: "🎓 PhD Thesis | Domain Obedient Deep Learning"
   url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
   authors: "Soumadeep Saha"
   venue: Indian Statistical Institute, Kolkata
   pdf: "/assets/pdf/dissertation.pdf"
   year: 2025
-  status: preprint
-  priority: 19
+  status: published
+  priority: 1000
   bibtex: |
     @phdthesis{SahaDissertation,
       title = {Domain Obedient Deep Learning},

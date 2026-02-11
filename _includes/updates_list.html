@@ -1,15 +1,16 @@
 {% assign entries = site.data.updates | sort: "date" | reverse %}
 {% assign current_year = "" %}
 
-<ul class="updates">
+<ul class="updates" id="updates-list">
 {% for u in entries %}
   {% assign year = u.date | date: "%Y" %}
+  
   {% if year != current_year %}
-    <h2 class="updates-year" id="{{ year }}">{{ year }}</h2>
     {% assign current_year = year %}
+    <h2 class="updates-year year-header" id="{{ year }}">{{ year }}</h2>
   {% endif %}
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">{{ u.title }}</span>
       <span class="update-date">{{ u.date | date: "%B %Y" }}</span>
@@ -20,3 +21,55 @@
   </li>
 {% endfor %}
 </ul>
+
+<div id="load-more-container" style="text-align: center; margin-top: 20px;">
+  <button id="load-more-btn" style="background: none; border: none; cursor: pointer; font-size: 24px; color:inherit;">
+        <span title="Load More" class="fas fa-chevron-down"> </span>
+  </button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const itemsPerPage = 5;
+    let currentIndex = 0;
+    
+    const items = document.querySelectorAll('.update-item');
+    const btn = document.getElementById('load-more-btn');
+    const headers = document.querySelectorAll('.year-header');
+
+    function showNextBatch() {
+        let count = 0;
+        let lastVisibleIndex = currentIndex;
+
+        for (let i = currentIndex; i < items.length && count < itemsPerPage; i++) {
+            items[i].style.display = "block";
+            count++;
+            lastVisibleIndex = i;
+        }
+
+        currentIndex += count;
+
+        headers.forEach(header => {
+            let nextElement = header.nextElementSibling;
+            let hasVisibleItem = false;
+            
+            while (nextElement && !nextElement.classList.contains('year-header')) {
+                if (nextElement.style.display === "block") {
+                    hasVisibleItem = true;
+                    break;
+                }
+                nextElement = nextElement.nextElementSibling;
+            }
+            header.style.display = hasVisibleItem ? "block" : "none";
+        });
+
+        if (currentIndex >= items.length) {
+            btn.style.display = "none";
+        }
+    }
+
+    showNextBatch();
+
+    btn.addEventListener('click', showNextBatch);
+});
+</script>

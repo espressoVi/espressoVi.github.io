@@ -300,15 +300,31 @@
       <section class="page__content" itemprop="text">
         
         
-<ul class="updates">
+<ul class="updates" id="updates-list">
 
   
   
-    <h2 class="updates-year" id="2026">2026</h2>
+  
     
+    <h2 class="updates-year year-header" id="2026">2026</h2>
   
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
+    <div class="update-header">
+      <span class="update-title">Preprint</span>
+      <span class="update-date">February 2026</span>
+    </div>
+    <div class="update-text">
+      <p>Check out our pre-print titled -  <a href="https://doi.org/10.36227/techrxiv.177075184.43798334/v1"><em>The Synergistic Integration of Access Control Management and Large Language Model Agents: A Survey</em></a>.</p>
+
+    </div>
+  </li>
+
+  
+  
+  
+
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Paper accepted to TACL</span>
       <span class="update-date">January 2026</span>
@@ -321,11 +337,12 @@
 
   
   
-    <h2 class="updates-year" id="2025">2025</h2>
+  
     
+    <h2 class="updates-year year-header" id="2025">2025</h2>
   
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Thesis defense (viva voce)</span>
       <span class="update-date">August 2025</span>
@@ -338,8 +355,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Paper accepted to EMNLP 2025</span>
       <span class="update-date">August 2025</span>
@@ -352,8 +370,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Preprint</span>
       <span class="update-date">July 2025</span>
@@ -366,8 +385,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Preprint</span>
       <span class="update-date">May 2025</span>
@@ -380,8 +400,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Presenting at NAACL 2025</span>
       <span class="update-date">April 2025</span>
@@ -394,8 +415,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">OpenAI Grant</span>
       <span class="update-date">February 2025</span>
@@ -408,8 +430,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Paper accepted to NAACL 2025</span>
       <span class="update-date">January 2025</span>
@@ -422,11 +445,12 @@
 
   
   
-    <h2 class="updates-year" id="2024">2024</h2>
+  
     
+    <h2 class="updates-year year-header" id="2024">2024</h2>
   
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Preprint</span>
       <span class="update-date">December 2024</span>
@@ -439,8 +463,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">HIDA Helmholtz visiting researcher</span>
       <span class="update-date">July 2024</span>
@@ -453,8 +478,9 @@
 
   
   
+  
 
-  <li class="update-item">
+  <li class="update-item" style="display: none;">
     <div class="update-header">
       <span class="update-title">Attending AAAI 2024</span>
       <span class="update-date">February 2024</span>
@@ -466,6 +492,58 @@
   </li>
 
 </ul>
+
+<div id="load-more-container" style="text-align: center; margin-top: 20px;">
+  <button id="load-more-btn" style="background: none; border: none; cursor: pointer; font-size: 24px; color:inherit;">
+        <span title="Load More" class="fas fa-chevron-down"> </span>
+  </button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const itemsPerPage = 5;
+    let currentIndex = 0;
+    
+    const items = document.querySelectorAll('.update-item');
+    const btn = document.getElementById('load-more-btn');
+    const headers = document.querySelectorAll('.year-header');
+
+    function showNextBatch() {
+        let count = 0;
+        let lastVisibleIndex = currentIndex;
+
+        for (let i = currentIndex; i < items.length && count < itemsPerPage; i++) {
+            items[i].style.display = "block";
+            count++;
+            lastVisibleIndex = i;
+        }
+
+        currentIndex += count;
+
+        headers.forEach(header => {
+            let nextElement = header.nextElementSibling;
+            let hasVisibleItem = false;
+            
+            while (nextElement && !nextElement.classList.contains('year-header')) {
+                if (nextElement.style.display === "block") {
+                    hasVisibleItem = true;
+                    break;
+                }
+                nextElement = nextElement.nextElementSibling;
+            }
+            header.style.display = hasVisibleItem ? "block" : "none";
+        });
+
+        if (currentIndex >= items.length) {
+            btn.style.display = "none";
+        }
+    }
+
+    showNextBatch();
+
+    btn.addEventListener('click', showNextBatch);
+});
+</script>
 
 
         
