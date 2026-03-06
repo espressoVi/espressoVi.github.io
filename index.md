@@ -10,7 +10,7 @@ author_profile: true
 I am Soumadeep {% include speaker.html %} (pronounced _Show-mo-deep_), and I
 completed my PhD in Computer Science at the Computer Vision and Pattern
 Recognition Unit, [ISI Kolkata](https://www.isical.ac.in), under the supervision
-of [Dr. Utpal Garain](https://www.isical.ac.in/~utpal/).
+of [Prof. Utpal Garain](https://www.isical.ac.in/~utpal/).
 
 My doctoral research focused on integrating key symbolic AI principles&mdash;such
 as domain constraint awareness and logical coherence&mdash;into deep
