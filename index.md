@@ -9,9 +9,8 @@ author_profile: true
 
 I am **Soumadeep** {% include speaker.html %} (pronounced _Show-mo-deep_), 
 a **Postdoctoral Researcher** at
-[**ANITI**, University of Toulouse](https://aniti.univ-toulouse.fr/en/).
-
-I earned my **PhD in Computer Science** from the
+[**ANITI**, University of Toulouse](https://aniti.univ-toulouse.fr/en/). I
+earned my **PhD in Computer Science** from the
 [Indian Statistical Institute, Kolkata](https://www.isical.ac.in), where I was
 advised by [Prof. Utpal Garain](https://www.isical.ac.in/~utpal/).
 
