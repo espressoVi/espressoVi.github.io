@@ -13,11 +13,28 @@
   status: preprint
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
-  url: "https://arxiv.org/abs/2507.11408"
+  url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.729/137436/KisMATH-Do-LLMs-Have-Knowledge-of-Implicit"
   authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
-  venue: Accepted to TACL (In press)
-  year: 2025
-  status: preprint
+  venue: TACL
+  venue_full: "Transactions of the Association for Computational Linguistics"
+  year: 2026
+  status: published
+  pdf: https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.729/2612454/tacl.a.729.pdf
+  priority: 140
+  bibtex: |
+    @article{saha-etal-2026-kismath,
+      author = {Saha, Soumadeep and Chaturvedi, Akshay and Saha, Saptarshi and Garain, Utpal and Asher, Nicholas},
+      title = {Kis{MATH}: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?},
+      journal = {Transactions of the Association for Computational Linguistics},
+      volume = {14},
+      pages = {1308-1328},
+      year = {2026},
+      month = {07},
+      issn = {2307-387X},
+      doi = {10.1162/TACL.a.729},
+      url = {https://doi.org/10.1162/TACL.a.729},
+      eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.729/2612454/tacl.a.729.pdf},
+    }
 
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
   url: "https://aclanthology.org/2025.findings-emnlp.21/"
@@ -105,7 +122,7 @@
   pdf: "/assets/pdf/dissertation.pdf"
   year: 2025
   status: published
-  priority: 1000
+  priority: 135
   bibtex: |
     @phdthesis{SahaDissertation,
       title = {Domain Obedient Deep Learning},
