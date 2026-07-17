@@ -9,16 +9,16 @@ author_profile: true
 
 I am **Soumadeep** {% include speaker.html %} (pronounced _Show-mo-deep_), 
 a **Postdoctoral Researcher** at
-[**ANITI**, University of Toulouse](https://aniti.univ-toulouse.fr/en/). I
-earned my **PhD in Computer Science** from the
+[**ANITI**, University of Toulouse](https://aniti.univ-toulouse.fr/en/) working
+with [Prof. Nicholas Asher](). I earned my **PhD in Computer Science** from the
 [Indian Statistical Institute, Kolkata](https://www.isical.ac.in), where I was
 advised by [Prof. Utpal Garain](https://www.isical.ac.in/~utpal/).
 
-My doctoral research focused on integrating key symbolic AI principles&mdash;such
-as domain constraint awareness and logical coherence&mdash;into deep
-learning systems. Currently, I am exploring techniques to better understand and
-enhance reasoning in Large Language Models (LLMs), with a focus on constraint
-adherence, alignment, and reliability.
+My doctoral research focused on integrating key symbolic AI
+principles&mdash;such as domain constraint awareness and logical
+coherence&mdash;into deep learning systems. Currently, I am exploring techniques
+to better understand and enhance reasoning in Large Language Models (LLMs), with
+a focus on constraint adherence, alignment, and reliability.
 
 ## Recent Works
 
