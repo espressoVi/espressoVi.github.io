@@ -1,9 +1,8 @@
-name: Deploy Jekyll with Project Organization
+name: Deploy Jekyll
 
 on:
   push:
-    branches: ["master"]
-  workflow_dispatch:
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -17,9 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Move projects to root
-        run: |
-          mv projects/* ./
+      - name: Flatten projects folder
+        run: mv projects/* ./
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
