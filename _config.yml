@@ -32,6 +32,7 @@ keep_files:
   - VALUED
   - CapOne
   - KisMATH
+  - BODHI
 
 author:
   name   : "Soumadeep SAHA, PhD"
