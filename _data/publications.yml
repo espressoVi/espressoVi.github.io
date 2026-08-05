@@ -1,16 +1,26 @@
+- title: "BODHI: Do LLMs Branch Out and Discover Heterogeneous Inferences?"
+  url: "https://doi.org/10.48550/arXiv.2608.02867"
+  authors: "Soumadeep Saha, K. Sharma, A. Chaturvedi, N. Asher"
+  venue: Arxiv
+  year: 2026
+  status: preprint
+  priority: 1
+
 - title: "The Synergistic Integration of Access Control Management and Large Language Model Agents: A Survey"
   url: "https://doi.org/10.36227/techrxiv.177075184.43798334/v1"
   authors: "Francesco Periti and Soumadeep Saha"
   venue: TechRxiv
   year: 2026
   status: preprint
+  priority: 3
 
 - title: "TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability"
   url: "https://doi.org/10.48550/arXiv.2605.14738"
-  authors: "Krish Sharma, Omar Naim, Soumadeep Saha, Nicholas Asher"
+  authors: "K. Sharma, O. Naim, Soumadeep Saha, N. Asher"
   venue: Arxiv
   year: 2026
   status: preprint
+  priority: 2
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.729/137436/KisMATH-Do-LLMs-Have-Knowledge-of-Implicit"

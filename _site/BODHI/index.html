@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODHI | In Preparation</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .abstract-preview {
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .links {
+            margin-top: 40px;
+        }
+
+        .links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="status-badge">In Preparation</div>
+        
+        <h1>BODHI</h1>
+        <p class="subtitle">Do LLMs Branch Out and Discover Heterogeneous Inferences?</p>
+
+        <div class="abstract-preview">
+            <strong>Abstract</strong>
+            <p>
+            Although reinforcement learning with verifiable rewards (RLVR) has improved
+            the performance of large language models (LLMs) across a variety of reasoning
+            tasks, there is significant debate as to whether RLVR expands the reasoning
+            capability boundary, or just improves sampling efficiency. In this paper, we
+            investigate the nature of test-time exploration in RLVR-trained LLMs by
+            employing controlled maze-solving experiments and extracting a tree
+            structure from mathematical reasoning traces (\btree{}s) based on semantic
+            equivalence. This helps us delineate between entropy arising from stylistic
+            variations and genuine inferential branching. Our findings demonstrate that
+            the policy entropy collapse observed in RLVR models is not merely syntactic,
+            and is accompanied by a significant reduction in semantic branching entropy.
+            While RLVR improves adherence to environmental constraints and backtracking
+            capabilities, it constricts the space of continuations; we provide evidence
+            suggesting that this might be responsible for the sample efficiency gains of
+            RLVR, albeit at the cost of genuine rollout diversity.
+           </p>
+        </div>
+
+        <div class="links">
+            <a href="https://huggingface.co/collections/espressovi/bodhi">Models</a>
+            <!--<a href="#">ArXiv</a>
+            <a href="#">Data</a>
+            <a href="#">Code</a>-->
+            <a href="mailto:soumadeep.saha97@gmail.com">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>

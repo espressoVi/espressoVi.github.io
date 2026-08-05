@@ -22,6 +22,5 @@ a focus on constraint adherence, alignment, and reliability.
 
 ## Recent Works
 
-{% assign published = site.data.publications | where: "status", "preprint" | sort: "year" | reverse %}
+{% assign published = site.data.publications | where: "status", "preprint" | sort: "priority" %}
 {% include pub_list.html pubs=published%}
-

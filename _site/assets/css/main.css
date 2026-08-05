@@ -419,9 +419,9 @@ td { padding: 0.5em; border-bottom: 1px solid #3d4046; }
 tr, td, th { vertical-align: middle; }
 
 /* ========================================================================== ANIMATIONS ========================================================================== */
-@-webkit-keyframes intro { 0% { opacity: 0; }
+@-webkit-keyframes intro { 0% { opacity: 0.01; }
   100% { opacity: 1; } }
-@keyframes intro { 0% { opacity: 0; }
+@keyframes intro { 0% { opacity: 0.01; }
   100% { opacity: 1; } }
 /* Components */
 /* ========================================================================== BUTTONS ========================================================================== */
