@@ -1,8 +1,15 @@
-- title: "Presenting at EMNLP 2026"
-  date: 2026-10-25
+- title: "Paper accepted to NeurIPS 2026"
+  date: 2026-09-24
   text: >
-    [[Poster]](#)
-    [[Video]](#).
+    Our paper titled
+    [*TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability*](https://doi.org/10.48550/arXiv.2605.14738)
+    was accepted to be presented in NeurIPS 2026.
+
+#- title: "Presenting at EMNLP 2026"
+#  date: 2026-10-25
+#  text: >
+#    [[Poster]](#)
+#    [[Video]](#).
 
 - title: "Preprint"
   date: 2026-08-03

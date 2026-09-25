@@ -4,7 +4,7 @@
   venue: Arxiv
   year: 2026
   status: preprint
-  priority: 1
+  priority: 2
 
 - title: "The Synergistic Integration of Access Control Management and Large Language Model Agents: A Survey"
   url: "https://doi.org/10.36227/techrxiv.177075184.43798334/v1"
@@ -16,11 +16,11 @@
 
 - title: "TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability"
   url: "https://doi.org/10.48550/arXiv.2605.14738"
-  authors: "K. Sharma, O. Naim, Soumadeep Saha, N. Asher"
-  venue: Arxiv
+  authors: "K. Sharma, O. Naim, Soumadeep Saha, V. Jain, A. Chadha, N. Asher"
+  venue: Accepted to NeurIPS
   year: 2026
   status: preprint
-  priority: 2
+  priority: 1
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.729/137436/KisMATH-Do-LLMs-Have-Knowledge-of-Implicit"
