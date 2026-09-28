@@ -23,27 +23,26 @@
   priority: 1
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
-  url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.729/137436/KisMATH-Do-LLMs-Have-Knowledge-of-Implicit"
+  url: "https://aclanthology.org/2026.tacl-1.59/"
   authors: "Soumadeep Saha, A. Chaturvedi, S. Saha, U. Garain, N. Asher"
   venue: TACL
   venue_full: "Transactions of the Association for Computational Linguistics"
   year: 2026
   status: published
-  pdf: https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.729/2612454/tacl.a.729.pdf
+  pdf: https://aclanthology.org/2026.tacl-1.59.pdf
   priority: 140
   bibtex: |
     @article{saha-etal-2026-kismath,
-      author = {Saha, Soumadeep and Chaturvedi, Akshay and Saha, Saptarshi and Garain, Utpal and Asher, Nicholas},
-      title = {Kis{MATH}: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?},
+      title = {{K}is{MATH}: Do {LLM}s Have Knowledge of Implicit Structures in Mathematical Reasoning?},
+      author = {Saha, Soumadeep  and Chaturvedi, Akshay  and Saha, Saptarshi  and Garain, Utpal  and Asher, Nicholas},
       journal = {Transactions of the Association for Computational Linguistics},
       volume = {14},
-      pages = {1308-1328},
       year = {2026},
-      month = {07},
-      issn = {2307-387X},
-      doi = {10.1162/TACL.a.729},
-      url = {https://doi.org/10.1162/TACL.a.729},
-      eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.729/2612454/tacl.a.729.pdf},
+      address = {Cambridge, MA},
+      publisher = {MIT Press},
+      url = {https://aclanthology.org/2026.tacl-1.59/},
+      doi = {10.1162/tacl.a.729},
+      pages = {1308--1328}
     }
 
 - title: "sudoLLM: On Multi-role Alignment of Language Models"
