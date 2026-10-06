@@ -30,6 +30,7 @@
   year: 2026
   status: published
   pdf: https://aclanthology.org/2026.tacl-1.59.pdf
+  poster: "/assets/pdf/EMNLP2026_KisMATH.pdf"
   priority: 140
   bibtex: |
     @article{saha-etal-2026-kismath,
