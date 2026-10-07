@@ -3,122 +3,563 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KisMATH | In Preparation</title>
+
+    <title>KisMATH | Mathematical Reasoning in LLMs</title>
+    <meta
+        name="description"
+        content="KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning? Published in TACL 2026."
+    >
+    <meta name="theme-color" content="#f7f8fa">
+
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
-            --accent-color: #3498db;
-            --bg-color: #f9f9f9;
+            --background: #f7f8fa;
+            --surface: #ffffff;
+            --text: #202936;
+            --muted: #637083;
+            --accent: #024592;
+            --accent-hover: #033775;
+            --acl-red: #ed1c24;
+            --border: #e5e9ef;
+            --soft: #f3f6fa;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            text-align: center;
+            padding: 64px 20px;
+            min-height: 100vh;
+            background: var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat",
+                Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 800px;
-            padding: 40px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 52px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(32, 41, 54, 0.045);
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .publication {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 12px;
+            color: var(--accent);
+            background: #edf3fa;
+            border-radius: 6px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            line-height: 1.2;
+            margin: 0;
+            font-size: clamp(2.8rem, 7vw, 4rem);
+            font-weight: 750;
+            letter-spacing: -0.055em;
+            line-height: 1.1;
+        }
+
+        .kis {
+            color: var(--acl-red);
+            font-family: "Montserrat";
+        }
+
+        .math {
+            color: var(--accent);
+            font-family: "Montserrat";
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
+            max-width: 650px;
+            margin: 18px auto 22px;
+            font-size: clamp(1.15rem, 3vw, 1.45rem);
+            font-weight: 450;
+            letter-spacing: -0.02em;
+            line-height: 1.5;
         }
 
-        .status-badge {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 40px;
+        .authors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px 16px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: var(--muted);
+            font-size: 0.93rem;
+            line-height: 1.7;
         }
 
-        .abstract-preview {
-            border-top: 1px solid #eee;
-            padding-top: 30px;
-            text-align: justify;
-            line-height: 1.6;
+        .authors a {
+            text-decoration: inherit;
+            color: inherit;
+            font: inherit;
         }
 
-        .links {
-            margin-top: 40px;
+        .authors a:hover {
+            text-decoration: inherit;
+            color: var(--acl-red);
+            font: inherit;
         }
 
-        .links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 15px;
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-height: 44px;
+            padding: 10px 18px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            color: var(--text);
+            font: inherit;
+            font-size: 0.88rem;
             font-weight: 600;
+            line-height: 1.3;
+            text-decoration: none;
+            cursor: pointer;
+            transition:
+                background-color 150ms ease,
+                border-color 150ms ease;
         }
 
-        .links a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background: var(--soft);
+            border-color: #c8d2df;
+        }
+
+        .button.primary {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #ffffff;
+        }
+
+        .button.primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .favicon {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            flex: 0 0 auto;
+        }
+
+        .button[aria-disabled="true"] {
+            color: var(--muted);
+            background: #fafbfc;
+            cursor: not-allowed;
+        }
+
+        .button[aria-disabled="true"] .favicon {
+            opacity: 0.55;
+        }
+
+        .button.copied {
+            color: #187047;
+            border-color: #b8dbc8;
+            background: #f0faf4;
+        }
+
+        .copy-symbol {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid #9bbcec;
+            outline-offset: 4px;
+        }
+
+        section {
+            margin-top: 36px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+
+        h2 {
+            margin: 0 0 16px;
+            font-size: 1.08rem;
+            font-weight: 650;
+            letter-spacing: -0.015em;
+        }
+
+        .abstract p {
+            margin: 0 0 16px;
+            color: #465264;
+            font-size: 0.98rem;
+            line-height: 1.85;
+            text-align: justify;
+        }
+
+        .abstract p:last-child {
+            margin-bottom: 0;
+        }
+
+        .citation-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .citation-header h2 {
+            margin: 0;
+        }
+
+        .citation-note {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        details {
+            margin-top: 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 13px 16px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+        }
+
+        pre {
+            margin: 0;
+            padding: 18px;
+            overflow-x: auto;
+            background: #f8fafc;
+            color: #465264;
+            font-size: 0.78rem;
+            line-height: 1.7;
+        }
+
+        code {
+            font-family:
+                "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        }
+
+        .copy-status {
+            margin: 10px 0 0;
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .copy-status:empty {
+            display: none;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact {
+            color: var(--muted);
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .contact:hover {
+            color: var(--accent);
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            .container {
+                padding: 32px 22px;
+                border-radius: 12px;
+            }
+
+            .authors {
+                gap: 4px 12px;
+                font-size: 0.85rem;
+            }
+
+            .authors a {
+                text-decoration: none;
+            }
+
+            .button {
+                padding: 10px 14px;
+                font-size: 0.82rem;
+            }
+
+            .abstract p {
+                font-size: 0.94rem;
+                line-height: 1.8;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .button {
+                transition: none;
+            }
         }
     </style>
 </head>
 <body>
+    <main class="container">
+        <header class="hero">
+            <div class="publication">TACL 2026</div> <div class="publication" style="background-color: #FFE0E1;">EMNLP 2026</div>
+            <h1><span class="kis">Kis</span><span class="math">MATH</span></h1>
+            <p class="subtitle"> Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning? </p>
 
-    <div class="container">
-        <div class="status-badge">In Preparation</div>
-        
-        <h1>KisMATH</h1>
-        <p class="subtitle">Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?</p>
+            <ul class="authors" aria-label="Authors">
+                <li><a href="https://espressovi.github.io">Soumadeep Saha</a></li>
+                <li>Akshay Chaturvedi</li>
+                <li>Saptarshi Saha</li>
+                <li>Utpal Garain</li>
+                <li>Nicholas Asher</li>
+            </ul>
 
-        <div class="abstract-preview">
-            <strong>Abstract</strong>
+            <nav class="actions" aria-label="Paper and resources">
+                <a class="button primary" href="https://aclanthology.org/2026.tacl-1.59/" target="_blank" rel="noopener noreferrer">
+                    <img class="favicon" src="https://www.google.com/s2/favicons?domain=aclanthology.org&sz=32" alt="" aria-hidden="true">
+                    Paper
+                </a>
+
+                <a class="button" href="https://github.com/espressovi/KisMATH" target="_blank" rel="noopener noreferrer">
+                    <img class="favicon" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" aria-hidden="true">
+                    Code
+                </a>
+
+                <a id="data-link" class="button" href="https://huggingface.co/espressovi" target="_blank" rel="noopener noreferrer">
+                    <img class="favicon" src="https://www.google.com/s2/favicons?domain=huggingface.co&sz=32" alt="" aria-hidden="true" >
+                    Data
+                </a>
+
+                <a id="data-link" class="button" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                    <img class="favicon" src="https://www.google.com/s2/favicons?domain=youtube.com&sz=32" alt="" aria-hidden="true" >
+                    Video
+                </a>
+
+                <a id="data-link" class="button" href="mailto:soumadeep.saha97@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="favicon" src="https://www.google.com/s2/favicons?domain=mail.google.com&sz=32" alt="" aria-hidden="true" >
+                    Contact
+                </a>
+            </nav>
+        </header>
+
+        <section class="abstract" aria-labelledby="abstract-heading">
+            <h2 id="abstract-heading">Abstract</h2>
+
             <p>
-            Chain-of-thought (CoT) traces have been shown to improve performance
-            of large language models on a plethora of reasoning tasks, yet there
-            is no consensus on the mechanism by which this boost is achieved. To
-            shed more light on this, we introduce Causal CoT Graphs (CCGraphs),
-            which are directed acyclic graphs automatically extracted from
-            reasoning traces that model fine-grained causal dependencies in
-            language-model outputs. A collection of 1671 mathematical reasoning
-            problems from MATH500, GSM8K, and AIME, together with their
-            associated CCGraphs, has been compiled into our dataset&mdash;KisMATH.
-            Our detailed empirical analysis with 15 open-weight LLMs shows that
-            (i) reasoning nodes in the CCGraphs are causal contributors to the
-            final answer, which we argue is constitutive of reasoning; and (ii)
-            LLMs emphasize the reasoning paths captured by the CCGraphs,
-            indicating that the models internally realize structures similar to
-            our graphs. KisMATH enables controlled, graph-aligned interventions
-            and opens avenues for further investigation into the role of CoT in
-            LLM reasoning.
+                Chain-of-thought (CoT) traces have been shown to improve
+                performance of large language models on a plethora of
+                reasoning tasks, yet there is no consensus on the mechanism
+                by which this boost is achieved. To shed more light on this,
+                we introduce <i>Causal CoT Graphs</i> (<b>CCGraphs</b>), which
+                are directed acyclic graphs automatically extracted from
+                reasoning traces that model fine-grained causal dependencies in
+                language-model outputs.
             </p>
-        </div>
 
-        <div class="links">
-            <a href="https://arxiv.org/abs/2507.11408">ArXiv</a>
-            <a href="#">Data</a>
-            <a href="#">Code</a>
-            <a href="mailto:soumadeep.saha97@gmail.com">Contact</a>
-        </div>
-    </div>
+            <p>
+                A collection of <b>1671</b> mathematical reasoning problems
+                from MATH500, GSM8K, and AIME, together with their associated
+                <b>CCGraphs</b>, has been compiled into our
+                dataset&mdash;<b>KisMATH</b>. Our detailed empirical analysis
+                with 15 open-weight LLMs shows that (i) reasoning nodes in the
+                <b>CCGraphs</b> are causal contributors to the final answer,
+                which we argue is constitutive of reasoning; and (ii) LLMs
+                emphasize the reasoning paths captured by the <b>CCGraphs</b>,
+                indicating that the models internally realize structures similar
+                to our graphs. <b>KisMATH</b> enables controlled, graph-aligned
+                interventions and opens avenues for further investigation
+                into the role of CoT in LLM reasoning.
+            </p>
+        </section>
 
+        <section aria-labelledby="citation-heading">
+            <div class="citation-header">
+                <h2 id="citation-heading">Citation</h2>
+
+                <button class="button" id="copy-bibtex" type="button" hidden>
+                    <span id="copy-symbol" class="copy-symbol" aria-hidden="true">⧉</span>
+                    <span id="copy-label">Copy BibTeX</span>
+                </button>
+            </div>
+
+            <p class="citation-note">
+                Soumadeep Saha, Akshay Chaturvedi, Saptarshi Saha, Utpal Garain, and Nicholas Asher. 2026.
+                <em> KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning? </em>
+                Transactions of the Association for Computational
+                Linguistics, 14:1308&ndash;1328.
+            </p>
+
+            <details id="bibtex-details">
+                <summary>View BibTeX</summary>
+                <pre><code id="bibtex">@article{saha-etal-2026-kismath,
+  title = {{K}is{MATH}: Do {LLM}s Have Knowledge of Implicit Structures in Mathematical Reasoning?},
+  author = {Saha, Soumadeep and Chaturvedi, Akshay and Saha, Saptarshi and Garain, Utpal and Asher, Nicholas},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {14},
+  year = {2026},
+  address = {Cambridge, MA},
+  publisher = {MIT Press},
+  url = {https://aclanthology.org/2026.tacl-1.59/},
+  doi = {10.1162/tacl.a.729},
+  pages = {1308--1328}
+}</code></pre>
+            </details>
+
+            <p id="copy-status" class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </section>
+
+        <footer> <a class="contact" href="mailto:soumadeep.saha97@gmail.com"> Contact </a> </footer>
+    </main>
+
+    <script>
+        document.querySelectorAll(".favicon").forEach((image) => {
+            image.addEventListener("error", () => {
+                image.hidden = true;
+            });
+
+            if (image.complete && image.naturalWidth === 0) {
+                image.hidden = true;
+            }
+        });
+        const copyButton = document.getElementById("copy-bibtex");
+        const copyLabel = document.getElementById("copy-label");
+        const copySymbol = document.getElementById("copy-symbol");
+        const copyStatus = document.getElementById("copy-status");
+        const bibtex = document.getElementById("bibtex");
+        const bibtexDetails = document.getElementById("bibtex-details");
+
+        let resetTimer;
+        copyButton.hidden = false;
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            textarea.setAttribute("readonly", "");
+            textarea.style.cssText =
+                "position:fixed;top:0;left:-9999px;opacity:0;";
+
+            document.body.appendChild(textarea);
+
+            let copied = false;
+
+            try {
+                textarea.focus();
+                textarea.select();
+                copied = document.execCommand("copy");
+            } catch {
+                copied = false;
+            } finally {
+                textarea.remove();
+                copyButton.focus({ preventScroll: true });
+            }
+
+            return copied;
+        }
+
+        copyButton.addEventListener("click", async () => {
+            clearTimeout(resetTimer);
+            copyButton.disabled = true;
+            copyButton.classList.remove("copied");
+            copyLabel.textContent = "Copying…";
+            copySymbol.textContent = "⧉";
+            copyStatus.textContent = "";
+
+            const text = bibtex.textContent.trim();
+            let copied = false;
+
+            try {
+                if (window.isSecureContext && navigator.clipboard) {
+                    await navigator.clipboard.writeText(text);
+                    copied = true;
+                }
+            } catch {
+                // Use the compatibility fallback below.
+            }
+
+            if (!copied) {
+                copied = fallbackCopy(text);
+            }
+
+            copyButton.disabled = false;
+
+            if (copied) {
+                copyLabel.textContent = "Copied!";
+                copySymbol.textContent = "✓";
+                copyButton.classList.add("copied");
+                copyStatus.textContent = "BibTeX copied to clipboard.";
+            } else {
+                bibtexDetails.open = true;
+                copyLabel.textContent = "Copy BibTeX";
+                copyStatus.textContent =
+                    "Automatic copying was blocked. Select and copy the BibTeX below.";
+
+                const range = document.createRange();
+                range.selectNodeContents(bibtex);
+
+                const selection = window.getSelection();
+                if (selection) {
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+            }
+
+            resetTimer = setTimeout(() => {
+                copyLabel.textContent = "Copy BibTeX";
+                copySymbol.textContent = "⧉";
+                copyButton.classList.remove("copied");
+
+                if (copied) {
+                    copyStatus.textContent = "";
+                }
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
