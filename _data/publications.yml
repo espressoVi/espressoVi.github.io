@@ -31,6 +31,8 @@
   status: published
   pdf: https://aclanthology.org/2026.tacl-1.59.pdf
   poster: "/assets/pdf/EMNLP2026_KisMATH.pdf"
+  video: "https://youtu.be/MR8yUSwNlM0"
+  code: "https://www.github.com/espressovi/KisMATH"
   priority: 140
   bibtex: |
     @article{saha-etal-2026-kismath,
@@ -79,7 +81,7 @@
   year: 2025
   pdf: "https://aclanthology.org/2025.naacl-long.104.pdf"
   poster: "/assets/pdf/NAACL2025_LanguageModelsAreCrosswordSolvers.pdf"
-  video: "https://youtu.be/VGxSeutuzO4?si=KZ7zWZkQ-SgnA5m9"
+  video: "https://youtu.be/VGxSeutuzO4"
   code: "https://www.github.com/espressovi/LMCrossword"
   status: published
   priority: 120
