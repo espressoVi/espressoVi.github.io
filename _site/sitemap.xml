@@ -57,11 +57,15 @@
 </url>
 <url>
 <loc>http://localhost:4000/KisMATH/</loc>
-<lastmod>2026-08-03T22:50:07+02:00</lastmod>
+<lastmod>2026-10-08T21:01:30+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/VALUED/</loc>
 <lastmod>2025-08-19T13:46:32+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/EMNLP2026_KisMATH.pdf</loc>
+<lastmod>2026-10-06T02:50:55+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/MastersThesis.pdf</loc>
@@ -73,7 +77,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/cv.pdf</loc>
-<lastmod>2026-08-05T21:18:23+02:00</lastmod>
+<lastmod>2026-09-25T17:20:55+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/dissertation.pdf</loc>

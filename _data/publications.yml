@@ -8,19 +8,29 @@
 
 - title: "The Synergistic Integration of Access Control Management and Large Language Model Agents: A Survey"
   url: "https://doi.org/10.36227/techrxiv.177075184.43798334/v1"
-  authors: "Francesco Periti and Soumadeep Saha"
+  authors: "F. Periti and Soumadeep Saha"
   venue: TechRxiv
   year: 2026
   status: preprint
   priority: 3
 
 - title: "TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability"
-  url: "https://doi.org/10.48550/arXiv.2605.14738"
+  url: "https://neurips.cc/virtual/2026/loc/sydney/poster/150263"
   authors: "K. Sharma, O. Naim, Soumadeep Saha, V. Jain, A. Chadha, N. Asher"
-  venue: Accepted to NeurIPS
+  venue: NeurIPS
+  venue_full: "Conference on Neural Information Processing Systems"
   year: 2026
-  status: preprint
-  priority: 1
+  status: published
+  pdf: "https://arxiv.org/pdf/2605.14738"
+  priority: 150
+  bibtex: |
+    @misc{sharma2026tapiocataskawarepruning,
+      title={{TAPIOCA}: Why Task-Aware Pruning Improves {OOD} model Capability},
+      author={Krish Sharma and Omar Naim and Soumadeep Saha and Vinija Jain and Aman Chadha and Nicholas Asher},
+      year={2026},
+      booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+      url={https://arxiv.org/abs/2605.14738}, 
+    }
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://aclanthology.org/2026.tacl-1.59/"
@@ -125,7 +135,6 @@
       url = {https://doi.org/10.1162/coli\_a\_00493},
       eprint = {https://direct.mit.edu/coli/article-pdf/50/1/119/2367125/coli\_a\_00493.pdf},
     }
-
 
 - title: "🎓 PhD Thesis | Domain Obedient Deep Learning"
   url: "https://digitalcommons.isical.ac.in/doctoral-theses/629"
