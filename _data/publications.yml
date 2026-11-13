@@ -1,3 +1,22 @@
+- title: "TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability"
+  url: "https://neurips.cc/virtual/2026/loc/sydney/poster/150263"
+  authors: "K. Sharma, O. Naim, Soumadeep Saha, V. Jain, A. Chadha, N. Asher"
+  venue: NeurIPS
+  venue_full: "Conference on Neural Information Processing Systems"
+  year: 2026
+  status: published
+  pdf: "https://arxiv.org/pdf/2605.14738"
+  poster: "/assets/pdf/NeurIPS2026_TAPIOCA.pdf"
+  priority: 150
+  bibtex: |
+    @misc{sharma2026tapiocataskawarepruning,
+      title={{TAPIOCA}: Why Task-Aware Pruning Improves {OOD} model Capability},
+      author={Krish Sharma and Omar Naim and Soumadeep Saha and Vinija Jain and Aman Chadha and Nicholas Asher},
+      year={2026},
+      booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+      url={https://arxiv.org/abs/2605.14738}, 
+    }
+
 - title: "BODHI: Do LLMs Branch Out and Discover Heterogeneous Inferences?"
   url: "https://doi.org/10.48550/arXiv.2608.02867"
   authors: "Soumadeep Saha, K. Sharma, A. Chaturvedi, N. Asher"
@@ -13,24 +32,6 @@
   year: 2026
   status: preprint
   priority: 3
-
-- title: "TAPIOCA: Why Task-Aware Pruning Improves OOD model Capability"
-  url: "https://neurips.cc/virtual/2026/loc/sydney/poster/150263"
-  authors: "K. Sharma, O. Naim, Soumadeep Saha, V. Jain, A. Chadha, N. Asher"
-  venue: NeurIPS
-  venue_full: "Conference on Neural Information Processing Systems"
-  year: 2026
-  status: published
-  pdf: "https://arxiv.org/pdf/2605.14738"
-  priority: 150
-  bibtex: |
-    @misc{sharma2026tapiocataskawarepruning,
-      title={{TAPIOCA}: Why Task-Aware Pruning Improves {OOD} model Capability},
-      author={Krish Sharma and Omar Naim and Soumadeep Saha and Vinija Jain and Aman Chadha and Nicholas Asher},
-      year={2026},
-      booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
-      url={https://arxiv.org/abs/2605.14738}, 
-    }
 
 - title: "KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?"
   url: "https://aclanthology.org/2026.tacl-1.59/"
